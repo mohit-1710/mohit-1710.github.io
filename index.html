@@ -3,237 +3,328 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mohit Kumar</title>
-  <meta name="description" content="Mohit Kumar — CS undergraduate at BITS Pilani and SDE intern at Scaler AI Labs. Working on training infrastructure, environments, and evaluation for AI agents.">
+  <title>Mohit Kumar | AI Safety &amp; Agent Infrastructure</title>
+  <meta name="description" content="Mohit Kumar — safety checks and training infrastructure for AI agents. CS undergraduate at BITS Pilani; SDE intern at Scaler AI Labs, Bengaluru.">
   <meta property="og:title" content="Mohit Kumar">
-  <meta property="og:description" content="Training infrastructure, environments, and evaluation for AI agents.">
+  <meta property="og:description" content="Safety checks and training infrastructure for AI agents.">
   <meta property="og:url" content="https://mohit-1710.github.io/">
-  <meta property="og:image" content="https://mohit-1710.github.io/images/profile.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%231d4ed8'/%3E%3Ctext%20x='50'%20y='68'%20font-size='55'%20font-family='Georgia,%20serif'%20fill='white'%20text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <!-- og:image deliberately absent until a real headshot exists — see UPDATING.md "Photo" -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%23007c89'/%3E%3Ctext%20x='50'%20y='68'%20font-size='55'%20font-family='Georgia,%20serif'%20fill='white'%20text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
 
-  <!-- ======================= HEADER ======================= -->
-  <header class="site-header">
-    <div class="header-text">
+<header class="site-header">
+  <div class="shell nav">
+    <a class="brand" href="#top">Mohit Kumar</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ======================= BOARD (identity / photo / about / contact) ======================= -->
+  <section class="shell board" aria-label="Profile overview">
+
+    <!-- When a real headshot exists: save it as images/profile.jpg, uncomment the
+         .profile-panel below, and remove the span-full class from .identity-panel. -->
+    <div class="panel identity-panel span-full">
       <h1>Mohit Kumar</h1>
-      <p class="tagline">CS undergraduate, BITS Pilani &middot; SDE intern, Scaler AI Labs</p>
-      <nav class="links" aria-label="Profile links">
-        <a href="mailto:mohitkumar001700@gmail.com">Email</a>
-        <a href="https://github.com/mohit-1710">GitHub</a>
-        <a href="https://www.linkedin.com/in/mohit0009">LinkedIn</a>
-        <a href="https://x.com/0xmohit_">X</a>
-        <!-- Uncomment when these exist:
-        <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
-        <a href="cv.pdf">CV</a>
-        -->
-      </nav>
+      <p class="lead">I build safety checks and training infrastructure for AI agents.</p>
+      <p class="lead-sub">CS undergraduate, BITS Pilani &middot; SDE intern, Scaler AI Labs, Bengaluru</p>
     </div>
-    <img class="portrait" src="images/profile.jpg" alt="Portrait of Mohit Kumar" width="150" height="150">
-  </header>
 
-  <!-- ======================= ABOUT ======================= -->
-  <section id="about">
-    <p>
-      I'm a computer science undergraduate at <a href="https://www.bits-pilani.ac.in/">BITS Pilani</a> and an
-      SDE intern at Scaler AI Labs in Bengaluru, where I build infrastructure for training AI browser
-      agents&nbsp;&mdash; reinforcement-learning task generation, dataset export pipelines, and data-quality
-      tooling used in collaboration with frontier labs.
-    </p>
-    <p>
-      I'm moving toward research. The questions I keep coming back to: what makes a training environment
-      actually teach an agent something, and how do you measure whether an agent can be trusted with real
-      work? This page is where my papers, notes, and experiments will land as they ship.
-    </p>
-    <p>
-      Before this, I was a founding engineer at TrackPrep&nbsp;&mdash; I built its backend from day one and
-      scaled it to 85,000+ students&nbsp;&mdash; and a backend engineer at HandaUncle, where I led a database
-      migration and built multi-model LLM orchestration.
-    </p>
+    <!--
+    <div class="profile-panel">
+      <img src="images/profile.jpg" alt="Portrait of Mohit Kumar" width="460" height="460">
+    </div>
+    -->
+
+
+    <article class="panel about-panel" id="about">
+      <h2>About</h2>
+      <p>
+        I'm a computer science undergraduate at <a href="https://www.bits-pilani.ac.in/">BITS Pilani</a> and
+        an SDE intern at Scaler AI Labs in Bengaluru, building the infrastructure that trains AI browser
+        agents &mdash; task generation, dataset pipelines, and evaluation tooling.
+      </p>
+      <p>
+        I currently lead the safety workstream: designing the tasks and checks that probe whether frontier
+        models follow their safety guardrails, and the enforcement pipelines that hold them to those
+        guardrails.
+      </p>
+      <p>
+        Before this, I was a founding engineer at TrackPrep &mdash; I built its backend from day one and
+        scaled it to 85,000+ students &mdash; and a backend engineer at HandaUncle, where I led a database
+        migration and built multi-model LLM orchestration.
+      </p>
+    </article>
+
+    <aside class="panel links-panel" id="contact" aria-label="Contact information">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:mohitkumar001700@gmail.com" aria-label="Email mohitkumar001700@gmail.com">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.3-8-5.3ZM4.9 7l7.1 4.7L19.1 7H4.9Z"/></svg>
+          <span>mohitkumar001700@gmail.com</span>
+        </a>
+        <a href="https://github.com/mohit-1710" aria-label="GitHub profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6a10.4 10.4 0 0 0-3.29 20.27c.52.1.71-.22.71-.5v-1.95c-2.89.63-3.5-1.24-3.5-1.24-.47-1.2-1.16-1.52-1.16-1.52-.94-.65.07-.63.07-.63 1.04.07 1.6 1.07 1.6 1.07.93 1.59 2.44 1.13 3.03.86.1-.67.36-1.13.66-1.39-2.31-.26-4.74-1.15-4.74-5.14 0-1.13.4-2.06 1.07-2.79-.11-.26-.46-1.32.1-2.75 0 0 .87-.28 2.86 1.07a9.94 9.94 0 0 1 5.2 0c1.99-1.35 2.86-1.07 2.86-1.07.56 1.43.21 2.49.1 2.75.67.73 1.07 1.66 1.07 2.79 0 4-2.44 4.88-4.76 5.13.37.32.7.95.7 1.92v2.84c0 .28.19.6.72.5A10.4 10.4 0 0 0 12 1.6Z"/></svg>
+          <span>mohit-1710</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohit0009" aria-label="LinkedIn profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.25 3.2a2.05 2.05 0 1 1 0 4.1 2.05 2.05 0 0 1 0-4.1ZM3.55 8.8h3.4V21h-3.4V8.8Zm5.7 0h3.25v1.67h.05c.45-.86 1.56-1.9 3.2-1.9 3.43 0 4.05 2.26 4.05 5.2V21h-3.4v-6.4c0-1.53-.03-3.5-2.13-3.5-2.13 0-2.46 1.67-2.46 3.39V21H9.25V8.8Z"/></svg>
+          <span>mohit0009</span>
+        </a>
+        <a href="https://x.com/0xmohit_" aria-label="X profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14.24 10.16 22.2 1h-1.88l-6.91 7.94L7.89 1H1.53l8.35 12.02L1.53 22.6h1.88l7.3-8.39 5.83 8.39h6.36l-8.66-12.44Zm-2.58 2.97-.85-1.2L4.08 2.4h2.9l5.43 7.7.84 1.2 7.07 10.02h-2.9l-5.76-8.18Z"/></svg>
+          <span>0xmohit_</span>
+        </a>
+        <!-- Uncomment when these exist:
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" aria-label="Google Scholar profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 1.8 8.35 12 13.7l8.2-4.3V16h2V8.35L12 3Zm0 12.85L5.2 12.3v3.25c0 2.16 3.04 3.95 6.8 3.95s6.8-1.79 6.8-3.95V12.3L12 15.85Z"/></svg>
+          <span>Google Scholar</span>
+        </a>
+        <a href="cv.pdf" aria-label="Curriculum vitae">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 1.5V8h4.5L14 3.5ZM8 12h8v1.6H8V12Zm0 4h8v1.6H8V16Z"/></svg>
+          <span>CV</span>
+        </a>
+        -->
+      </div>
+    </aside>
+
   </section>
 
   <!-- ======================= NEWS ======================= -->
   <!--
-    TO ADD A NEWS ITEM: copy an <li class="news-item"> block below, put it at the TOP
-    of the list (newest first), and update the date + text. Date format is "Mon YYYY"
-    (3-letter month, e.g. "Sep 2026"); "Early/Late YYYY" is fine when the month is fuzzy.
-    Then bump the "Last updated" date in the footer. See UPDATING.md for the full checklist.
+    TO ADD A NEWS ITEM: copy an <li> block below, put it at the TOP of the list
+    (newest first), and update the date + text. Date format is "Mon YYYY" (3-letter
+    month, e.g. "Sep 2026"); "Early/Late YYYY" or "YYYY" is fine when the month is
+    fuzzy. Then bump the "Last updated" date in the footer. See UPDATING.md.
   -->
-  <section id="news">
-    <h2>News</h2>
-    <ul class="news-list">
-      <li class="news-item">
-        <span class="news-date">Jul 2026</span>
-        <span>Set up this site. Research notes and papers land here from now on.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Apr 2026</span>
-        <span>Built <a href="https://github.com/mohit-1710/incident-response-env">incident-response-env</a>
-        &mdash; an OpenEnv RL environment for SRE incident triage, with cascading failures and rubric-based
-        grading.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Early 2026</span>
-        <span>Joined Scaler AI Labs as an SDE intern, working on training infrastructure for AI browser
-        agents.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Aug 2025</span>
-        <span>Became a teaching assistant at Scaler School of Technology &mdash; data structures &amp;
-        algorithms and full-stack web, 100+ students.</span>
-      </li>
-    </ul>
+  <section class="shell section" id="news">
+    <div class="section-head">
+      <p class="eyebrow">Updates</p>
+      <h2>News</h2>
+    </div>
+    <div class="section-body">
+      <ul class="news-list">
+        <li>
+          <span class="chip">Jul 2026</span>
+          <span>Set up this site.</span>
+        </li>
+        <li>
+          <span class="chip">2026</span>
+          <span>Leading the safety workstream at Scaler AI Labs &mdash; guardrail-compliance tasks,
+          checks, and enforcement for frontier models.</span>
+        </li>
+        <li>
+          <span class="chip">Apr 2026</span>
+          <span>Built <a href="https://github.com/mohit-1710/incident-response-env">incident-response-env</a>
+          &mdash; an OpenEnv RL environment for SRE incident triage, with cascading failures and
+          rubric-based grading.</span>
+        </li>
+        <li>
+          <span class="chip">Early 2026</span>
+          <span>Joined Scaler AI Labs as an SDE intern, working on training infrastructure for AI browser
+          agents.</span>
+        </li>
+        <li>
+          <span class="chip">Aug 2025</span>
+          <span>Became a teaching assistant at Scaler School of Technology &mdash; data structures &amp;
+          algorithms and full-stack web, 100+ students.</span>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <!-- ======================= RESEARCH ======================= -->
-  <section id="research">
-    <h2>Research Interests</h2>
-    <p>
-      Everything I work on circles one theme: <strong>agents that can be trusted to do real work</strong>.
-      Concretely, that breaks into three threads:
-    </p>
-    <ul>
-      <li><strong>Training environments</strong> &mdash; RL environments and automated task generation that
-      exercise real software skills, not toy benchmarks.</li>
-      <li><strong>Data for agents</strong> &mdash; dataset pipelines, validation, and privacy tooling for
-      agent-training corpora at scale.</li>
-      <li><strong>Evaluation &amp; reliability</strong> &mdash; rubric-based grading, and measuring when an
-      agent's output can actually be trusted.</li>
-    </ul>
+  <!-- ======================= FOCUS ======================= -->
+  <section class="shell section" id="focus">
+    <div class="section-head">
+      <p class="eyebrow">Focus</p>
+      <h2>What I Work On</h2>
+    </div>
+    <div class="section-body">
+      <div class="focus-grid">
+        <div class="card">
+          <h3>Model safety</h3>
+          <p>Checks and enforcement that keep frontier models inside their safety guardrails.</p>
+        </div>
+        <div class="card">
+          <h3>Agent training environments</h3>
+          <p>RL environments and automated task generation that exercise real software skills, not toy
+          benchmarks.</p>
+        </div>
+        <div class="card">
+          <h3>Data &amp; evaluation</h3>
+          <p>Dataset pipelines, validation, and privacy tooling at scale; rubric-based grading for agent
+          work.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- ======================= PUBLICATIONS ======================= -->
-  <!--
-    TO ADD A PUBLICATION: copy this template inside <ul class="pub-list">, newest first,
-    and DELETE the .pub-empty placeholder <li> once the first real entry is in:
+  <!-- ======================= PUBLICATIONS (hidden until the first one exists) =======================
+    UNCOMMENT this whole section the day the first paper / preprint / technical note is posted,
+    then add entries with the template below (newest first). See UPDATING.md.
 
-    <li class="pub-item">
-      <span class="pub-venue">arXiv 2026</span>
-      <p class="pub-title"><a href="https://arxiv.org/abs/XXXX.XXXXX">Paper Title Goes Here</a></p>
-      <p class="pub-authors"><strong>Mohit Kumar</strong>, Coauthor Name, Coauthor Name</p>
-      <p class="pub-desc">One sentence on what the paper shows.</p>
-      <p class="pub-links">
-        <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> /
-        <a href="https://github.com/mohit-1710/repo">code</a> /
-        <a href="#">project page</a>
-      </p>
-    </li>
-  -->
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul class="pub-list">
-      <li class="pub-empty">
-        <p>None yet &mdash; this section exists so I have to fill it. First entries are on the way.</p>
-      </li>
-    </ul>
+  <section class="shell section" id="publications">
+    <div class="section-head">
+      <p class="eyebrow">Papers</p>
+      <h2>Publications</h2>
+    </div>
+    <div class="section-body">
+      <ul class="pub-list">
+        <li class="card pub-item">
+          <span class="chip">arXiv 2026</span>
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/XXXX.XXXXX">Paper Title Goes Here</a></h3>
+          <p class="pub-authors"><strong>Mohit Kumar</strong>, Coauthor Name, Coauthor Name</p>
+          <p class="pub-desc">One sentence on what the paper shows.</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+            <a href="https://github.com/mohit-1710/repo">Code</a>
+          </p>
+        </li>
+      </ul>
+    </div>
   </section>
+  ======================= END PUBLICATIONS ======================= -->
 
   <!-- ======================= EXPERIENCE ======================= -->
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">Scaler AI Labs</span>
-        <span class="entry-date">2026 &ndash; present</span>
-      </div>
-      <p class="entry-role">SDE Intern &middot; Bengaluru</p>
-      <p>Infrastructure for training AI browser agents, in collaboration with frontier labs: an automated
-      RL task-generation pipeline targeting real applications (Gmail, Salesforce, Jira), the dataset export
-      pipeline on the Dreamliner platform, and high-performance PII-scrubbing tooling in Rust.</p>
+  <section class="shell section" id="experience">
+    <div class="section-head">
+      <p class="eyebrow">Work</p>
+      <h2>Experience</h2>
     </div>
+    <div class="section-body">
 
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">HandaUncle</span>
-        <span class="entry-date">Oct 2025 &ndash; Jan 2026</span>
+      <div class="card item">
+        <div class="item-head">
+          <h3>Scaler AI Labs</h3>
+          <span class="chip">2026 &ndash; present</span>
+        </div>
+        <p class="item-role">SDE Intern &middot; Bengaluru</p>
+        <p>Infrastructure for training AI browser agents. I lead the safety workstream &mdash; task design,
+        checks, and enforcement pipelines that verify frontier models follow their safety guardrails.</p>
+        <p>Also built the automated task-generation pipeline targeting real applications (Gmail, Salesforce,
+        Jira), the dataset export pipeline, and parallel Aho-Corasick PII scrubbing in Rust.</p>
       </div>
-      <p class="entry-role">Backend Engineer</p>
-      <p>AI conversational finance. Built multi-model LLM orchestration with retrieval-augmented generation,
-      led the MongoDB &rarr; PostgreSQL migration, and built embedding-based analytics pipelines.</p>
-    </div>
 
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">TrackPrep</span>
-        <span class="entry-date">Feb 2025 &ndash; Oct 2025</span>
+      <div class="card item">
+        <div class="item-head">
+          <h3>HandaUncle</h3>
+          <span class="chip">Oct 2025 &ndash; Jan 2026</span>
+        </div>
+        <p class="item-role">Backend Engineer</p>
+        <p>AI conversational finance. Built multi-model LLM orchestration with retrieval-augmented
+        generation, led the MongoDB &rarr; PostgreSQL migration, and built embedding-based analytics
+        pipelines.</p>
       </div>
-      <p class="entry-role">Founding Engineer</p>
-      <p>Built a NEET-preparation platform from day one; owned the backend as it scaled to 85,000+ students.
-      PostgreSQL optimization, Redis caching, and the progressive web app.</p>
-    </div>
-  </section>
 
-  <!-- ======================= EDUCATION ======================= -->
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">BITS Pilani</span>
-        <span class="entry-date">2024 &ndash; 2027</span>
+      <div class="card item">
+        <div class="item-head">
+          <h3>TrackPrep</h3>
+          <span class="chip">Feb 2025 &ndash; Oct 2025</span>
+        </div>
+        <p class="item-role">Founding Engineer</p>
+        <p>Built a NEET-preparation platform from day one; owned the backend as it scaled to 85,000+
+        students. PostgreSQL optimization, Redis caching, and the progressive web app.</p>
       </div>
-      <p class="entry-role">B.Sc. Computer Science</p>
-    </div>
 
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">Scaler School of Technology</span>
-        <span class="entry-date">2024 &ndash; 2028</span>
-      </div>
-      <p class="entry-role">Computer science intensive, in parallel &middot; Dean's Merit List 2025</p>
     </div>
   </section>
 
-  <!-- ======================= TEACHING ======================= -->
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">Teaching Assistant, Scaler School of Technology</span>
-        <span class="entry-date">Aug 2025 &ndash; present</span>
+  <!-- ======================= EDUCATION & TEACHING ======================= -->
+  <section class="shell section" id="education">
+    <div class="section-head">
+      <p class="eyebrow">Background</p>
+      <h2>Education &amp; Teaching</h2>
+    </div>
+    <div class="section-body">
+
+      <div class="card item">
+        <div class="item-head">
+          <h3>BITS Pilani</h3>
+          <span class="chip">2024 &ndash; 2027</span>
+        </div>
+        <p class="item-role">B.Sc. Computer Science</p>
       </div>
-      <p>Mentoring 100+ students in data structures &amp; algorithms (Java / JavaScript) and full-stack web
-      development.</p>
+
+      <div class="card item">
+        <div class="item-head">
+          <h3>Scaler School of Technology</h3>
+          <span class="chip">2024 &ndash; 2028</span>
+        </div>
+        <p class="item-role">Computer science intensive, in parallel &middot; Dean's Merit List 2025</p>
+        <p>Teaching assistant since Aug 2025 &mdash; mentoring 100+ students in data structures &amp;
+        algorithms (Java / JavaScript) and full-stack web development.</p>
+      </div>
+
     </div>
   </section>
 
   <!-- ======================= SELECTED PROJECTS ======================= -->
-  <!--
-    Keep this list short (3 max) and research-flavored. Full project graveyard stays on GitHub.
-  -->
-  <section id="projects">
-    <h2>Selected Projects</h2>
-
-    <div class="entry">
-      <p class="entry-title"><a href="https://github.com/mohit-1710/incident-response-env">incident-response-env</a></p>
-      <p>An OpenEnv reinforcement-learning environment for SRE incident triage: cascading failures, eight
-      hardening techniques, and binary rubric grading.</p>
+  <!-- Keep this list short (3 max). The full project graveyard stays on GitHub. -->
+  <section class="shell section" id="projects">
+    <div class="section-head">
+      <p class="eyebrow">Builds</p>
+      <h2>Selected Projects</h2>
     </div>
+    <div class="section-body">
 
-    <div class="entry">
-      <p class="entry-title">SculptAI</p>
-      <p>Natural language &rarr; educational animation, built on Manim with LLM-generated scene code.
-      Go + Python + Next.js microservices; ~90% first-pass render success on my test prompt set.</p>
+      <div class="card item">
+        <div class="item-head">
+          <h3><a href="https://github.com/mohit-1710/incident-response-env">incident-response-env</a></h3>
+          <span class="chip">2026</span>
+        </div>
+        <p>An OpenEnv reinforcement-learning environment for SRE incident triage: cascading failures,
+        eight hardening techniques, and binary rubric grading.</p>
+      </div>
+
+      <div class="card item">
+        <div class="item-head">
+          <h3>SculptAI</h3>
+          <span class="chip">2025</span>
+        </div>
+        <p>Natural language &rarr; educational animation, built on Manim with LLM-generated scene code.
+        Go + Python + Next.js microservices; ~90% first-pass render success on my test prompt set.</p>
+      </div>
+
     </div>
   </section>
 
   <!-- ======================= MISC ======================= -->
-  <section id="misc">
-    <h2>Misc</h2>
-    <p>
-      Before any of this, I led my region's basketball team at the national level (Jammu, ages 16&ndash;17).
-      The discipline stuck. Fastest way to reach me is
-      <a href="mailto:mohitkumar001700@gmail.com">email</a>.
-    </p>
+  <section class="shell section" id="misc">
+    <div class="section-head">
+      <p class="eyebrow">Beyond work</p>
+      <h2>Misc</h2>
+    </div>
+    <div class="section-body">
+      <p>
+        Before any of this, I led my region's basketball team at the national level (Jammu, ages
+        16&ndash;17). The discipline stuck. Fastest way to reach me is
+        <a href="mailto:mohitkumar001700@gmail.com">email</a>.
+      </p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2026 Mohit Kumar &middot; Last updated July 2026</p>
-  </footer>
-
 </main>
+
+<footer class="site-footer">
+  <div class="shell footer-content">
+    <p>&copy; 2026 Mohit Kumar</p>
+    <p>Last updated July 2026</p>
+  </div>
+</footer>
+
 </body>
 </html>
