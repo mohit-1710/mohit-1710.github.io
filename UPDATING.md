@@ -43,7 +43,8 @@ The day the first one is posted:
 
 ## Standing rules for this page (from Mohit, see also `/me/myself`)
 
-- Safety/AI framing only. **No web3 projects on this page** — that work lives on GitHub.
+- Safety/AI framing leads; **web3 work is welcome** (rule reversed by Mohit 2026-07-16) —
+  AgentTrust, Token-2022 skills, and fellowship results live in News/Focus/Projects.
 - **Don't use the word "research" or claim papers/notes on the page until the first one
   is actually posted** (rule set 2026-07-16). The Publications section stays commented
   out until then.
