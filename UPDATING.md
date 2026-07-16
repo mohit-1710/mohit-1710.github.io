@@ -31,14 +31,11 @@ The day the first one is posted:
 
 ## Other maintenance
 
-- **Photo:** there is deliberately **no photo anywhere right now** (the GitHub avatar is
-  an anime character — wrong tone for this page). Three things are wired together when a
-  real headshot arrives; do all of them in one commit:
-  1. Save it as `images/profile.jpg` (square, ≥400×400).
-  2. In `index.html`, uncomment the `.profile-panel` block in the board section and
-     remove the `span-full` class from `.identity-panel`.
-  3. Restore the link-preview image in `<head>`:
-     `<meta property="og:image" content="https://mohit-1710.github.io/images/profile.jpg">`
+- **Photo:** `images/profile.jpg` is the avatar Mohit explicitly chose (2026-07-16). To
+  swap it, replace the file (square, ≥400×400) — the photo panel and the `og:image` meta
+  both point at that one path, so nothing else needs touching. To remove the photo
+  entirely: comment out the `.profile-panel` block, add the `span-full` class to
+  `.identity-panel`, and drop the `og:image` meta — all three together.
 - **Role changes** (new job, graduation): update the identity-panel lead lines, the
   About paragraphs, and the Experience/Education cards together so they don't drift.
 - **Every edit:** bump the "Last updated" date in the footer. A stale date reads as an
@@ -56,3 +53,5 @@ The day the first one is posted:
 - Never open with stats. Story and stakes first (see `VOICE.md` in `/me/myself`).
 - Honest status framing: no "in progress" claimed as shipped.
 - BITS Pilani is the lead education credential.
+- Keep the About bio to one short paragraph, and don't mention when the site was made
+  (rules set 2026-07-16).
