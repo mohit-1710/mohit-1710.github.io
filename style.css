@@ -341,6 +341,10 @@ main > .section:last-of-type {
   justify-self: start;
 }
 
+.web3-wins {
+  margin-bottom: 22px;
+}
+
 /* ---------- cards (focus / experience / education / projects / pubs) ---------- */
 
 .card {
